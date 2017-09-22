@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">pms</a> &gt; <a href="index.source.html" class="el_package">com.pms.model</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">package com.pms.model;
+
+import javax.persistence.*;
+
+@Entity
+public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private String designation;
+    private long contact;
+    private String email;
+
+    @OneToOne(mappedBy = &quot;employee&quot;, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Project project;
+
+    @OneToOne(mappedBy = &quot;employee&quot;, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Task task;
+
+
+<span class="fc" id="L23">    public Employee() {}</span>
+
+<span class="nc" id="L25">    public Employee(String name, String designation, long contact, String email, Project project, Task task) {</span>
+<span class="nc" id="L26">        this.name = name;</span>
+<span class="nc" id="L27">        this.designation = designation;</span>
+<span class="nc" id="L28">        this.contact = contact;</span>
+<span class="nc" id="L29">        this.email = email;</span>
+<span class="nc" id="L30">        this.project = project;</span>
+<span class="nc" id="L31">        this.task = task;</span>
+<span class="nc" id="L32">    }</span>
+
+<span class="nc" id="L34">    public Employee(String name, String designation, long contact, String email) {</span>
+<span class="nc" id="L35">        this.name = name;</span>
+<span class="nc" id="L36">        this.designation = designation;</span>
+<span class="nc" id="L37">        this.contact = contact;</span>
+<span class="nc" id="L38">        this.email = email;</span>
+<span class="nc" id="L39">    }</span>
+
+
+<span class="nc" id="L42">    public Employee(int id, String name, String designation, long contact, String email, Project project, Task task) {</span>
+<span class="nc" id="L43">        this.id = id;</span>
+<span class="nc" id="L44">        this.name = name;</span>
+<span class="nc" id="L45">        this.designation = designation;</span>
+<span class="nc" id="L46">        this.contact = contact;</span>
+<span class="nc" id="L47">        this.email = email;</span>
+<span class="nc" id="L48">        this.project = project;</span>
+<span class="nc" id="L49">        this.task = task;</span>
+<span class="nc" id="L50">    }</span>
+
+    public int getId() {
+<span class="nc" id="L53">        return id;</span>
+    }
+
+    public void setId(int id) {
+<span class="fc" id="L57">        this.id = id;</span>
+<span class="fc" id="L58">    }</span>
+
+    public String getName() {
+<span class="fc" id="L61">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L65">        this.name = name;</span>
+<span class="fc" id="L66">    }</span>
+
+    public String getDesignation() {
+<span class="nc" id="L69">        return designation;</span>
+    }
+
+    public void setDesignation(String designation) {
+<span class="nc" id="L73">        this.designation = designation;</span>
+<span class="nc" id="L74">    }</span>
+
+    public long getContact() {
+<span class="fc" id="L77">        return contact;</span>
+    }
+
+    public void setContact(long contact) {
+<span class="fc" id="L81">        this.contact = contact;</span>
+<span class="fc" id="L82">    }</span>
+
+    public String getEmail() {
+<span class="nc" id="L85">        return email;</span>
+    }
+
+    public void setEmail(String email) {
+<span class="nc" id="L89">        this.email = email;</span>
+<span class="nc" id="L90">    }</span>
+
+    public Project getProject() {
+<span class="nc" id="L93">        return project;</span>
+    }
+
+    public void setProject(Project project) {
+<span class="nc" id="L97">        this.project = project;</span>
+<span class="nc" id="L98">    }</span>
+
+    public Task getTask() {
+<span class="nc" id="L101">        return task;</span>
+    }
+
+    public void setTask(Task task) {
+<span class="nc" id="L105">        this.task = task;</span>
+<span class="nc" id="L106">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L110">        return &quot;Employee{&quot; +</span>
+                &quot;id=&quot; + id +
+                &quot;, name='&quot; + name + '\'' +
+                &quot;, designation='&quot; + designation + '\'' +
+                &quot;, contact=&quot; + contact +
+                &quot;, email='&quot; + email + '\'' +
+                &quot;, project=&quot; + project +
+                &quot;, task=&quot; + task +
+                '}';
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

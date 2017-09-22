@@ -1,6 +1,10 @@
 package com.pms.model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Employee {
@@ -11,34 +15,25 @@ public class Employee {
     private String name;
     private String designation;
     private long contact;
+
+    @NotNull(message = "Email can't be null")
     private String email;
-
-    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Project project;
-
-    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Task task;
-
 
     public Employee() {}
 
-    public Employee(String name, String designation, long contact, String email, Project project, Task task) {
+    public Employee(String name, String designation, long contact, String email) {
         this.name = name;
         this.designation = designation;
         this.contact = contact;
         this.email = email;
-        this.project = project;
-        this.task = task;
     }
 
-    public Employee(int id, String name, String designation, long contact, String email, Project project, Task task) {
+    public Employee(int id, String name, String designation, long contact, String email) {
         this.id = id;
         this.name = name;
         this.designation = designation;
         this.contact = contact;
         this.email = email;
-        this.project = project;
-        this.task = task;
     }
 
     public int getId() {
@@ -80,21 +75,4 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public Project getProject() {
-        return project;
-    }
-
-    public void setProject(Project project) {
-        this.project = project;
-    }
-
-    public Task getTask() {
-        return task;
-    }
-
-    public void setTask(Task task) {
-        this.task = task;
-    }
 }
-

@@ -1,6 +1,14 @@
 package com.pms.model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import java.util.*;
 
 @Entity
@@ -8,51 +16,65 @@ public class Story {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int storyId;
     private String name;
     private String description;
-    private String status;
+
+    @Enumerated(EnumType.STRING)
+    private Status status;
     private int numberOfTasks;
     private Date startDate;
     private Date endDate;
 
-    @ManyToOne
-    private Project project;
+    @OneToOne
+    @JoinColumn(name = "employeeId")
+    private Employee employee;
 
-    @OneToMany(mappedBy="story", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-    private Set<Task> tasks = new HashSet<Task>();
+    @ManyToOne
+    @JoinColumn(name = "project_id")
+    private Project project;
 
     public Story() {}
 
-    public Story(String name, String description, String status, int numberOfTasks, Date startDate, Date endDate, Project project, Set<Task> tasks) {
+    public Story(String name, String description, Status status, int numberOfTasks, Date startDate, Date endDate, Employee employee, Project project) {
         this.name = name;
         this.description = description;
         this.status = status;
         this.numberOfTasks = numberOfTasks;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.employee = employee;
         this.project = project;
-        this.tasks = tasks;
     }
 
-    public Story(int id, String name, String description, String status, int numberOfTasks, Date startDate, Date endDate, Project project, Set<Task> tasks) {
-        this.id = id;
+    public Story(String name, String description, Status status, int numberOfTasks, Date startDate, Date endDate) {
         this.name = name;
         this.description = description;
         this.status = status;
         this.numberOfTasks = numberOfTasks;
         this.startDate = startDate;
         this.endDate = endDate;
+    }
+
+    public Story(int storyId, String name, String description, Status status, int numberOfTasks, Date startDate, Date endDate, Employee employee, Project project) {
+        this.storyId = storyId;
+        this.name = name;
+        this.description = description;
+        this.status = status;
+        this.numberOfTasks = numberOfTasks;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.employee = employee;
         this.project = project;
-        this.tasks = tasks;
     }
 
-    public int getId() {
-        return id;
+
+    public int getStoryId() {
+        return storyId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setStoryId(int storyId) {
+        this.storyId = storyId;
     }
 
     public String getName() {
@@ -63,19 +85,27 @@ public class Story {
         this.name = name;
     }
 
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
@@ -83,39 +113,31 @@ public class Story {
         return numberOfTasks;
     }
 
-    public void setNumberOfTasks(int numberOfTasks) {
-        this.numberOfTasks = numberOfTasks;
-    }
+//    public void setNumberOfTasks(int numberOfTasks) {
+//        this.numberOfTasks = numberOfTasks;
+//    }
 
     public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
+//    public void setStartDate(Date startDate) {
+//        this.startDate = startDate;
+//    }
 
     public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+//    public void setEndDate(Date endDate) {
+//        this.endDate = endDate;
+//    }
 
-    public Project getProject() {
-        return project;
-    }
+//    public Project getProject() {
+//        return project;
+//    }
 
     public void setProject(Project project) {
         this.project = project;
-    }
-
-    public Set<Task> getTasks() {
-        return tasks;
-    }
-
-    public void setTasks(Set<Task> tasks) {
-        this.tasks = tasks;
     }
 }

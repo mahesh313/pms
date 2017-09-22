@@ -1,17 +1,25 @@
 package com.pms.model;
 
-import javax.persistence.*;
-import java.util.*;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import java.util.Date;
 
 @Entity
 public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int projectId;
     private String name;
     private String technologies;
-    private String status;
+
+    @Enumerated(EnumType.STRING)
+    private Status status;
     private int numberOfStories;
     private Date startDate;
     private Date endDate;
@@ -19,41 +27,35 @@ public class Project {
     @OneToOne
     private Employee employee;
 
-    @OneToMany(mappedBy="project", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-    private Set<Story> stories = new HashSet<Story>();
-
     public Project() {}
 
-    public Project(String name, String technologies, String status, int numberOfStories, Date startDate, Date endDate, Employee employee, Set<Story> stories) {
+
+    public Project(String name, String technologies, Status status, int numberOfStories, Date startDate, Date endDate) {
         this.name = name;
         this.technologies = technologies;
         this.status = status;
         this.numberOfStories = numberOfStories;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.employee = employee;
-        this.stories = stories;
     }
 
-    public Project(int id, String name, String technologies, String status, int numberOfStories, Date startDate, Date endDate, Employee employee, Set<Story> stories) {
-        this.id = id;
+    public Project(int projectId, String name, String technologies, Status status, int numberOfStories, Date startDate, Date endDate) {
+        this.projectId = projectId;
         this.name = name;
         this.technologies = technologies;
         this.status = status;
         this.numberOfStories = numberOfStories;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.employee = employee;
-        this.stories = stories;
     }
 
 
-    public int getId() {
-        return id;
+    public int getProjectId() {
+        return projectId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
     }
 
     public String getName() {
@@ -68,15 +70,15 @@ public class Project {
         return technologies;
     }
 
-    public void setTechnologies(String technologies) {
-        this.technologies = technologies;
-    }
+//    public void setTechnologies(String technologies) {
+//        this.technologies = technologies;
+//    }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
@@ -84,25 +86,25 @@ public class Project {
         return numberOfStories;
     }
 
-    public void setNumberOfStories(int numberOfStories) {
-        this.numberOfStories = numberOfStories;
-    }
+//    public void setNumberOfStories(int numberOfStories) {
+//        this.numberOfStories = numberOfStories;
+//    }
 
     public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
+//    public void setStartDate(Date startDate) {
+//        this.startDate = startDate;
+//    }
 
     public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+//    public void setEndDate(Date endDate) {
+//        this.endDate = endDate;
+//    }
 
     public Employee getEmployee() {
         return employee;
@@ -110,13 +112,5 @@ public class Project {
 
     public void setEmployee(Employee employee) {
         this.employee = employee;
-    }
-
-    public Set<Story> getStories() {
-        return stories;
-    }
-
-    public void setStories(Set<Story> stories) {
-        this.stories = stories;
     }
 }

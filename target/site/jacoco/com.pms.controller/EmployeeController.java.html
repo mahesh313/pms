@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>EmployeeController.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">pms</a> &gt; <a href="index.source.html" class="el_package">com.pms.controller</a> &gt; <span class="el_source">EmployeeController.java</span></div><h1>EmployeeController.java</h1><pre class="source lang-java linenums">package com.pms.controller;
+
+import com.pms.model.Employee;
+import com.pms.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+
+@RestController
+<span class="fc" id="L11">public class EmployeeController {</span>
+
+    @Autowired
+    EmployeeRepository employeeRepository;
+
+    @RequestMapping(value = &quot;get/employee/{id}&quot;, method = RequestMethod.GET)
+    public String getEmployee(@PathVariable Integer id){
+<span class="fc" id="L18">        Employee employee = employeeRepository.findOne(id);</span>
+<span class="fc" id="L19">        return employee.getName();</span>
+    }
+
+    @RequestMapping(value = &quot;get/employee/contact/{name}&quot;, method = RequestMethod.GET)
+    public long getEmployeeContact(@PathVariable String name){
+<span class="fc" id="L24">        Employee employee = employeeRepository.findByName(name);</span>
+<span class="fc" id="L25">        return employee.getContact();</span>
+    }
+
+    @RequestMapping(value = &quot;/addemployee&quot;,consumes = APPLICATION_JSON_VALUE ,produces = APPLICATION_JSON_VALUE ,method = RequestMethod.POST)
+    public Employee addEmployee(@RequestBody Employee employee) {
+<span class="nc" id="L30">        return employeeRepository.saveAndFlush(employee);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
