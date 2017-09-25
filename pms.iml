@@ -128,6 +128,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache:2.10.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.13" level="project" />
+    <orderEntry type="library" name="Maven: net.bull.javamelody:javamelody-spring-boot-starter:1.65.0" level="project" />
+    <orderEntry type="library" name="Maven: net.bull.javamelody:javamelody-core:1.65.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jrobin:jrobin:1.5.9" level="project" />
   </component>
   <component name="sonarModuleSettings">
     <option name="alternativeWorkingDirPath" value="" />
