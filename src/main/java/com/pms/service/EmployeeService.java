@@ -35,6 +35,7 @@ public class EmployeeService {
 
     @Transactional
     public void removeEmployee(Integer id) {
+	System.out.println(“git demo”);
         employeeRepository.deleteEmployeeById(id);
     }
 }
