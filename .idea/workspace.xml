@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be7b9d7a-76ef-41a5-91dd-d833df44afef" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/pms/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/com/pms/controller/EmployeeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/pms/service/EmployeeService.class" afterPath="$PROJECT_DIR$/target/classes/com/pms/service/EmployeeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/pms/integration/EmployeeIntegrationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/pms/integration/EmployeeIntegrationTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/pms/webIntegration/ProjectControllerWebIntegrationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/pms/webIntegration/ProjectControllerWebIntegrationTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApplication.log" afterPath="$PROJECT_DIR$/myApplication.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/model/Status.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/model/Status.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/service/EmployeeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/service/EmployeeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pms/controller/ProjectControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pms/controller/ProjectControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pms/controller/StoryControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pms/controller/StoryControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/ProjectControllerWebIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/ProjectControllerWebIntegrationTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,22 +33,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pms$com_pms_in_pms.coverage" NAME="com.pms in pms Coverage Results" MODIFIED="1505467944368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pms.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/pms$All_in_pms.coverage" NAME="All in pms Coverage Results" MODIFIED="1505211060302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/pms$App.coverage" NAME="App Coverage Results" MODIFIED="1504869419533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pms.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/pms$EmployeeControllerTest.coverage" NAME="EmployeeControllerTest Coverage Results" MODIFIED="1504854354054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pms.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/pms$ProjectServiceTest_testProjectNotFoundException.coverage" NAME="ProjectServiceTest.testProjectNotFoundException Coverage Results" MODIFIED="1505373759006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.pms.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/pms$EmployeeServiceTest_testEmployeeNotFoundException.coverage" NAME="EmployeeServiceTest.testEmployeeNotFoundException Coverage Results" MODIFIED="1505373735358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.pms.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/pms$com_pms_in_pms.coverage" NAME="com.pms in pms Coverage Results" MODIFIED="1505467944368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.pms.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/pms$EmployeeControllerTest.coverage" NAME="EmployeeControllerTest Coverage Results" MODIFIED="1504854354054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.pms.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/pms$App.coverage" NAME="App Coverage Results" MODIFIED="1504869419533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.pms.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/pms$All_in_pms.coverage" NAME="All in pms Coverage Results" MODIFIED="1505211060302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -48,51 +66,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeControllerWebIntegrationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java">
+      <file leaf-file-name="ProjectService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="178">
+              <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaMelodyConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/configuration/JavaMelodyConfiguration.java">
+      <file leaf-file-name="ProjectControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/ProjectControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="523">
+              <caret line="94" column="77" lean-forward="false" selection-start-line="94" selection-start-column="77" selection-end-line="94" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Status.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/model/Status.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1925">
-              <caret line="173" column="17" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+            <state relative-caret-position="66">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectControllerWebIntegrationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/webIntegration/ProjectControllerWebIntegrationTest.java">
+      <file leaf-file-name="StoryController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="322">
+              <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java">
+      <file leaf-file-name="ProjectServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="-32">
+              <caret line="80" column="83" lean-forward="false" selection-start-line="80" selection-start-column="83" selection-end-line="80" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoryServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-148">
+              <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoryControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/StoryControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="85" column="42" lean-forward="false" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -125,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/model/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/model/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/repository/ProjectManagementRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/repository/StoryRepository.java" />
@@ -134,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pms/model/Story.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/ProjectControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/StoryControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/EmployeeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/EmployeeControllerWebIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/ProjectControllerWebIntegrationTest.java" />
@@ -148,25 +214,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pms/exception/ExceptionHandlingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/exception/StoryNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/exception/TaskNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/service/TaskServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/service/TaskService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/controller/EmployeeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pms/service/EmployeeServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/repository/ProjectRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/ProjectControllerWebIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pms/configuration/JavaMelodyConfiguration.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/service/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pms/webIntegration/ProjectControllerWebIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/model/Status.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pms/controller/StoryControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pms/controller/ProjectControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java" />
       </list>
     </option>
   </component>
@@ -204,10 +274,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -227,9 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -385,6 +452,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,14 +494,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.pms.webIntegration in pms">
+  <component name="RunManager" selected="Spring Boot.App">
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pms.App" />
       <module name="pms" />
       <envs />
     </configuration>
-    <configuration name="EmployeeControllerWebIntegrationTest.testAddEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeControllerWebIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.pms.webIntegration.*" />
@@ -443,8 +513,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.pms.webIntegration" />
       <option name="MAIN_CLASS_NAME" value="com.pms.webIntegration.EmployeeControllerWebIntegrationTest" />
-      <option name="METHOD_NAME" value="testAddEmployee" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -456,7 +526,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="EmployeeControllerWebIntegrationTest.testGetEmployeeContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProjectControllerWebIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.pms.webIntegration.*" />
@@ -467,9 +537,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.pms.webIntegration" />
-      <option name="MAIN_CLASS_NAME" value="com.pms.webIntegration.EmployeeControllerWebIntegrationTest" />
-      <option name="METHOD_NAME" value="testGetEmployeeContact" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.pms.webIntegration.ProjectControllerWebIntegrationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -638,20 +708,20 @@
       <patterns />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EmployeeControllerWebIntegrationTest.testGetEmployeeContact" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EmployeeControllerWebIntegrationTest.testAddEmployee" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProjectControllerWebIntegrationTest.testAddProject" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.com.pms in pms" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.com.pms.webIntegration in pms" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.App" />
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.App" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProjectControllerWebIntegrationTest.testAddProject" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.com.pms in pms" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.com.pms.webIntegration in pms" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EmployeeControllerWebIntegrationTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ProjectControllerWebIntegrationTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.com.pms.webIntegration in pms" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.pms in pms" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ProjectControllerWebIntegrationTest.testAddProject" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EmployeeControllerWebIntegrationTest.testAddEmployee" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EmployeeControllerWebIntegrationTest.testGetEmployeeContact" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ProjectControllerWebIntegrationTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EmployeeControllerWebIntegrationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.com.pms.webIntegration in pms" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.com.pms in pms" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ProjectControllerWebIntegrationTest.testAddProject" />
       </list>
     </recent_temporary>
   </component>
@@ -679,27 +749,30 @@
       <workItem from="1505800549071" duration="3938000" />
       <workItem from="1506055754569" duration="4534000" />
       <workItem from="1506321416085" duration="192000" />
+      <workItem from="1506322814892" duration="1676000" />
+      <workItem from="1506333552680" duration="3297000" />
+      <workItem from="1506498468541" duration="1869000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeControllerWebIntegrationTest_testAddEmployee - 2017.09.22 at 12h 56m 13s.xml">
-      <configuration name="EmployeeControllerWebIntegrationTest.testAddEmployee" configurationId="JUnit" />
+    <history-entry file="EmployeeControllerWebIntegrationTest - 2017.09.25 at 16h 10m 28s.xml">
+      <configuration name="EmployeeControllerWebIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmployeeControllerWebIntegrationTest_testGetEmployee - 2017.09.22 at 12h 55m 47s.xml">
-      <configuration name="EmployeeControllerWebIntegrationTest.testGetEmployee" configurationId="JUnit" />
+    <history-entry file="EmployeeControllerWebIntegrationTest - 2017.09.25 at 16h 11m 25s.xml">
+      <configuration name="EmployeeControllerWebIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmployeeControllerWebIntegrationTest_testGetEmployeeContact - 2017.09.22 at 12h 55m 58s.xml">
-      <configuration name="EmployeeControllerWebIntegrationTest.testGetEmployeeContact" configurationId="JUnit" />
+    <history-entry file="EmployeeControllerWebIntegrationTest - 2017.09.25 at 16h 12m 00s.xml">
+      <configuration name="EmployeeControllerWebIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectControllerWebIntegrationTest_testAddProject - 2017.09.22 at 12h 56m 27s.xml">
-      <configuration name="ProjectControllerWebIntegrationTest.testAddProject" configurationId="JUnit" />
+    <history-entry file="EmployeeControllerWebIntegrationTest - 2017.09.25 at 16h 12m 18s.xml">
+      <configuration name="EmployeeControllerWebIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectControllerWebIntegrationTest_testGetProject - 2017.09.22 at 12h 54m 51s.xml">
-      <configuration name="ProjectControllerWebIntegrationTest.testGetProject" configurationId="JUnit" />
+    <history-entry file="ProjectControllerWebIntegrationTest - 2017.09.25 at 16h 12m 55s.xml">
+      <configuration name="ProjectControllerWebIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_pms_in_pms - 2017.09.22 at 12h 47m 59s.xml">
-      <configuration name="com.pms in pms" configurationId="JUnit" />
+    <history-entry file="ProjectControllerWebIntegrationTest - 2017.09.25 at 16h 13m 35s.xml">
+      <configuration name="ProjectControllerWebIntegrationTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_pms_in_pms - 2017.09.22 at 12h 50m 44s.xml">
       <configuration name="com.pms in pms" configurationId="JUnit" />
@@ -715,7 +788,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90324000" />
+    <option name="totallyTimeSpent" value="97166000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,22 +800,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="810" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19783197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32791328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.97097945" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2673611" sideWeight="0.49528936" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2673611" sideWeight="0.49528936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -756,7 +831,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68319225" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -764,6 +838,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -779,27 +856,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/repository/EmployeeManagementRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/repository/StoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/model/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/repository/ProjectManagementRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/ProjectControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/StoryControllerTest.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -812,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
           <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,39 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="136" column="32" lean-forward="false" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="110" column="24" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/integration/EmployeeIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/EmployeeServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
           <caret line="102" column="30" lean-forward="false" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,9 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,15 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
           <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/repository/EmployeeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,18 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,7 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="79" column="35" lean-forward="false" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,48 +978,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <element signature="e#531#532#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/EmployeeControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/ProjectControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,15 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-333">
           <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,26 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="e#981#982#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,31 +1007,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/integration/EmployeeIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="51" column="51" lean-forward="false" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/EmployeeServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="56" column="34" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="61" column="58" lean-forward="false" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/webIntegration/ProjectControllerWebIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        <state relative-caret-position="-454">
+          <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/webIntegration/EmployeeControllerWebIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/configuration/JavaMelodyConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/myApplication.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1116,10 +1065,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/EmployeeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/Verify Employee Inserted.jmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/configuration/JavaMelodyConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="69" lean-forward="false" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/1.3.1.RELEASE/spring-boot-dependencies-1.3.1.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="2046" column="16" lean-forward="false" selection-start-line="2046" selection-start-column="16" selection-end-line="2046" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="173" column="17" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+        <state relative-caret-position="66">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/model/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/StoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/StoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/StoryControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="85" column="42" lean-forward="false" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/StoryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/controller/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pms/service/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/controller/ProjectControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="94" column="77" lean-forward="false" selection-start-line="94" selection-start-column="77" selection-end-line="94" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pms/service/ProjectServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="80" column="83" lean-forward="false" selection-start-line="80" selection-start-column="83" selection-end-line="80" selection-end-column="83" />
           <folding />
         </state>
       </provider>

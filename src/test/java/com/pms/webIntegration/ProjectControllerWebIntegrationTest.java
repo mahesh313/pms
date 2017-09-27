@@ -39,11 +39,11 @@ public class ProjectControllerWebIntegrationTest {
     @Test
     public void testGetProject() throws IOException {
         RestTemplate restTemplate = new TestRestTemplate();
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://localhost:8080/get/project/2", String.class);
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://localhost:8080/get/project/1", String.class);
 
         assertThat(responseEntity.getStatusCode(), equalTo(HttpStatus.OK));
 
-        assertThat(responseEntity.getBody(), is("VIMMS"));
+        assertThat(responseEntity.getBody(), is("abc"));
 
     }
 

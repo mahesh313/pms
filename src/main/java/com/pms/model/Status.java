@@ -1,5 +1,5 @@
 package com.pms.model;
 
 public enum Status {
-    QUEUED,INPROGRESS,DONE;
+    QUEUED,INPROGRESS,DONE,INVALID;
 }

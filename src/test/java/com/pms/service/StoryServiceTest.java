@@ -4,8 +4,6 @@ import com.pms.exception.StoryNotFoundException;
 import com.pms.model.*;
 import com.pms.repository.ProjectRepository;
 import com.pms.repository.StoryRepository;
-import com.pms.service.StoryService;
-import com.pms.service.TaskService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -97,7 +95,7 @@ public class StoryServiceTest {
         taskList.add(new Task("Opendb", "doing", Status.QUEUED, "HI","No issues", new SimpleDateFormat("yyyy-mm-dd").parse("2017-08-23"), new SimpleDateFormat("yyyy-mm-dd").parse("2017-09-25"), new Story(), new Employee()));
         taskList.add(new Task("Closedb", "doing", Status.QUEUED, "HI","No issues", new SimpleDateFormat("yyyy-mm-dd").parse("2017-08-24"), new SimpleDateFormat("yyyy-mm-dd").parse("2017-09-30"), new Story(), new Employee()));
         when(taskService.getStatusesOfTasksOfStory(1)).thenReturn(taskList);
-        Status storyStatus = storyService.updateStatusOfStory(story);
+        Status storyStatus = storyService.updateStatusOfStory(story, Status.QUEUED);
         assertThat(storyStatus,is(Status.QUEUED));
     }
 
@@ -111,7 +109,7 @@ public class StoryServiceTest {
 
         when(taskService.getStatusesOfTasksOfStory(1)).thenReturn(taskList);
 
-        Status status = storyService.updateStatusOfStory(story);
+        Status status = storyService.updateStatusOfStory(story, Status.INPROGRESS);
         assertThat(status,is(Status.INPROGRESS));
     }
 
@@ -124,7 +122,7 @@ public class StoryServiceTest {
         taskList.add(new Task("Closeb", "doing", Status.DONE, "HI","No issues", new SimpleDateFormat("yyyy-mm-dd").parse("2017-08-23"), new SimpleDateFormat("yyyy-mm-dd").parse("2017-09-25"), new Story(), new Employee()));
 
         when(taskService.getStatusesOfTasksOfStory(1)).thenReturn(taskList);
-        Status storyStatus = storyService.updateStatusOfStory(story);
+        Status storyStatus = storyService.updateStatusOfStory(story, Status.DONE);
         assertThat(storyStatus,is(Status.DONE));
     }
 

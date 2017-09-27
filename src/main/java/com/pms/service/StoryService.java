@@ -10,7 +10,6 @@ import com.pms.repository.StoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +50,7 @@ public class StoryService {
         return storyList;
     }
 
-    public Status updateStatusOfStory(Story story) {
+    public Status updateStatusOfStory(Story story, Status status) {
         Integer storyId = story.getStoryId();
         List<Task> taskList = taskService.getStatusesOfTasksOfStory(storyId);
         List<Status> statusList = new ArrayList<Status>();
@@ -59,9 +58,13 @@ public class StoryService {
             statusList.add(task.getStatus());
         }
         Status updatedStatus = checkStoryStatus(statusList);
-        story.setStatus(updatedStatus);
-        storyRepository.save(story);
-        return story.getStatus();
+        if(updatedStatus == status)
+        {
+            story.setStatus(updatedStatus);
+            storyRepository.save(story);
+            return story.getStatus();
+        }
+        return Status.INVALID;
     }
 
     public Status checkStoryStatus(List<Status> statusList) {

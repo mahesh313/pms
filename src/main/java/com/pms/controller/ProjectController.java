@@ -33,10 +33,10 @@ public class ProjectController {
 
 
 
-    @RequestMapping(value = "update/project/{id}/status", method = RequestMethod.PUT)
-    public Status updateProjectStatus(@PathVariable Integer id){
+    @RequestMapping(value = "update/project/{id}/status/{status}", method = RequestMethod.PUT)
+    public Status updateProjectStatus(@PathVariable Integer id, @PathVariable Status status){
         Project project = projectService.findProject(id);
-        return projectService.updateStatusOfProject(project);
+        return projectService.updateStatusOfProject(project, status);
     }
 
     @RequestMapping(value = "get/project/{id}/manager", method = RequestMethod.GET)

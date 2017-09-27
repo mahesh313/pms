@@ -6,7 +6,6 @@ import com.pms.model.Status;
 import com.pms.model.Story;
 import com.pms.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -42,7 +41,7 @@ public class ProjectService {
         return projectRepository.saveAndFlush(project);
     }
 
-    public Status updateStatusOfProject(Project project) {
+    public Status updateStatusOfProject(Project project, Status status) {
         Integer projectId = project.getProjectId();
         List<Story> storyList = storyService.getStoriesOfProject(projectId);
         List<Status> statusList = new ArrayList<Status>();
@@ -50,9 +49,12 @@ public class ProjectService {
             statusList.add(story.getStatus());
         }
         Status updatedStatus = checkProjectStatus(statusList);
-        project.setStatus(updatedStatus);
-        projectRepository.saveAndFlush(project);
-        return project.getStatus();
+        if(updatedStatus == status){
+            project.setStatus(updatedStatus);
+            projectRepository.saveAndFlush(project);
+            return project.getStatus();
+        }
+        return Status.INVALID;
     }
 
     public Status checkProjectStatus(List<Status> statusList) {

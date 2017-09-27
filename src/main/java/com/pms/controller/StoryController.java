@@ -47,10 +47,10 @@ public class StoryController  {
         return storyService.saveStory(story);
     }
 
-    @RequestMapping(value = "update/story/{id}", method = RequestMethod.PUT)
-    public Status updateStoryStatus(@PathVariable Integer id) {
+    @RequestMapping(value = "update/story/{id}/status/{status}", method = RequestMethod.PUT)
+    public Status updateStoryStatus(@PathVariable Integer id, @PathVariable Status status) {
         Story story = storyService.findStory(id);
-        return storyService.updateStatusOfStory(story);
+        return storyService.updateStatusOfStory(story,status);
     }
 
 

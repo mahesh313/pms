@@ -38,4 +38,12 @@ public class EmployeeController {
         return employee.getContact();
     }
 
+    @RequestMapping(value = "remove/employee/{id}", method = RequestMethod.DELETE)
+    public long removeEmployee(@PathVariable int id){
+        Employee employee = employeeService.removeEmployee(id);
+        return employee.getContact();
+    }
+
+
+
 }

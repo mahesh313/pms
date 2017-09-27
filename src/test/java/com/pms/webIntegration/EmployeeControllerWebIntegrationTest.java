@@ -43,7 +43,7 @@ public class EmployeeControllerWebIntegrationTest {
     @Test
     public void testGetEmployee() throws IOException {
         RestTemplate restTemplate = new TestRestTemplate();
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://localhost:8080/get/employee/2", String.class);
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://localhost:8080/get/employee/91", String.class);
 
         assertThat(responseEntity.getStatusCode(), equalTo(HttpStatus.OK));
 
@@ -54,12 +54,12 @@ public class EmployeeControllerWebIntegrationTest {
     @Test
     public void testGetEmployeeContact() throws IOException {
         RestTemplate restTemplate = new TestRestTemplate();
-        ResponseEntity<Long> responseEntity = restTemplate.getForEntity("http://localhost:8080/get/employee/contact/Manali", Long.class);
+        ResponseEntity<Long> responseEntity = restTemplate.getForEntity("http://localhost:8080/get/employee/contact/Ram", Long.class);
 
         assertThat(responseEntity.getStatusCode(), equalTo(HttpStatus.OK));
 
 
-        assertThat(responseEntity.getBody(), is(123L));
+        assertThat(responseEntity.getBody(), is(943766662L));
 
     }
 

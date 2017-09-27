@@ -5,8 +5,6 @@ import com.pms.model.Project;
 import com.pms.model.Status;
 import com.pms.model.Story;
 import com.pms.repository.ProjectRepository;
-import com.pms.service.ProjectService;
-import com.pms.service.StoryService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -80,7 +78,7 @@ public class ProjectServiceTest {
 
          when(storyService.getStoriesOfProject(1)).thenReturn(stories);
 
-        projectStatus = projectService.updateStatusOfProject(project);
+        projectStatus = projectService.updateStatusOfProject(project, projectStatus);
         assertThat(projectStatus,is(Status.QUEUED));
     }
 
@@ -96,7 +94,7 @@ public class ProjectServiceTest {
 
         when(storyService.getStoriesOfProject(1)).thenReturn(stories);
 
-        projectStatus = projectService.updateStatusOfProject(project);
+        projectStatus = projectService.updateStatusOfProject(project, projectStatus);
         assertThat(projectStatus,is(Status.INPROGRESS));
     }
 
@@ -110,7 +108,7 @@ public class ProjectServiceTest {
 
         when(storyService.getStoriesOfProject(1)).thenReturn(stories);
 
-        Status projectStatus = projectService.updateStatusOfProject(project);
+        Status projectStatus = projectService.updateStatusOfProject(project, Status.DONE);
         assertThat(projectStatus,is(Status.DONE));
     }
 

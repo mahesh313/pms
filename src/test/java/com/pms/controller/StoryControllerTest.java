@@ -1,15 +1,11 @@
 package com.pms.controller;
 
-import com.pms.controller.StoryController;
 import com.pms.model.Employee;
 import com.pms.model.Project;
 import com.pms.model.Status;
 import com.pms.model.Story;
-import com.pms.repository.StoryRepository;
 import com.pms.service.ProjectService;
 import com.pms.service.StoryService;
-import org.hamcrest.Matchers;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -88,8 +84,8 @@ public class StoryControllerTest {
         story.setStatus(Status.QUEUED);
 
         Status storyStatus = Status.QUEUED;
-        when(storyService.updateStatusOfStory(story)).thenReturn(storyStatus);
-        Status response = storyController.updateStoryStatus(1);
+        when(storyService.updateStatusOfStory(story, Status.QUEUED)).thenReturn(storyStatus);
+        Status response = storyController.updateStoryStatus(1,Status.QUEUED);
         assertThat(storyStatus, is(response));
     }
 

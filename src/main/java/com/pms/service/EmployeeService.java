@@ -33,9 +33,9 @@ public class EmployeeService {
         return employeeRepository.findByName(name);
     }
 
-    @Transactional
-    public void removeEmployee(Integer id) {
-	System.out.println(“git demo”);
-        employeeRepository.deleteEmployeeById(id);
+    public Employee removeEmployee(int id) {
+        Employee employee = employeeRepository.findOne(id);
+        employeeRepository.deleteEmployeeById(employee.getId());
+        return employee;
     }
 }

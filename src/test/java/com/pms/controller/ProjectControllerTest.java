@@ -1,10 +1,8 @@
 package com.pms.controller;
 
-import com.pms.controller.ProjectController;
 import com.pms.model.Employee;
 import com.pms.model.Project;
 import com.pms.model.Status;
-import com.pms.repository.ProjectRepository;
 import com.pms.service.EmployeeService;
 import com.pms.service.ProjectService;
 import org.junit.Before;
@@ -92,9 +90,9 @@ public class ProjectControllerTest {
         project.setStatus(Status.QUEUED);
         when(projectService.findProject(1)).thenReturn(project);
         Status status = Status.QUEUED;
-        when(projectService.updateStatusOfProject(project)).thenReturn(status);
+        when(projectService.updateStatusOfProject(project, status)).thenReturn(status);
 
-        Status projectStatus = projectController.updateProjectStatus(1);
+        Status projectStatus = projectController.updateProjectStatus(1,status);
         assertThat(projectStatus, is(status));
     }
 
